@@ -1,39 +1,101 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# flutter_debug_logger
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+`flutter_debug_logger` is a lightweight and easy-to-use Flutter utility package designed to simplify API response logging by **pretty-printing JSON** in your debug console. This is ideal for developers who want clean, structured, and readable logs when debugging RESTful APIs.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+---
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+## 🚀 Features
 
-## Features
+- ✅ **Pretty Prints JSON**: Beautiful indentation for `Map`, `List`, or raw JSON `String` responses
+- ✅ **Custom Tagging**: Identify logs using custom `tag` values
+- ✅ **HTTP Method Logging**: Optionally include request methods (`GET`, `POST`, etc.)
+- ✅ **Error-Safe Logging**: Handles invalid JSON or unexpected types gracefully
+- ✅ **Zero Dependencies**: Simple, efficient, and lightweight
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+---
 
-## Getting started
+## 📦 Installation
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add this to your `pubspec.yaml`:
 
-## Usage
+```yaml
+dependencies:
+  flutter_debug_logger: ^1.0.0
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
 ```
 
-## Additional information
+## 🧩 Getting Started
+Simply import the package in your Dart file:
+```
+import 'package:flutter_debug_logger/flutter_debug_logger.dart';
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+```
+
+## ✅ Usage Example
+```
+FlutterDebugLogger.printJsonResponse(
+  url: 'https://api.example.com/product',
+  method: 'GET',
+  tag: 'PRODUCT_API',
+  statusCode: 200,
+  responseBody: {
+    "success": true,
+    "product": {
+      "id": 101,
+      "name": "Wireless Headphones",
+      "price": 59.99,
+      "in_stock": true,
+      "categories": ["Electronics", "Audio"],
+      "rating": {
+        "average": 4.5,
+        "count": 234
+      }
+    }
+  },
+);
+
+```
+
+## 🧪 Example Output
+
+```
+----->[PRODUCT_API] URL         ==> https://api.example.com/product
+----->[PRODUCT_API] Method      ==> GET
+----->[PRODUCT_API] StatusCode  ==> 200
+----->[PRODUCT_API] Body        ==> {
+  "success": true,
+  "product": {
+    "id": 101,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "in_stock": true,
+    "categories": [
+      "Electronics",
+      "Audio"
+    ],
+    "rating": {
+      "average": 4.5,
+      "count": 234
+    }
+  }
+}
+
+```
+
+## ⚠️ Error Handling
+Invalid JSON strings or unsupported types (like int, double, bool) won't crash your app. The logger will print a fallback message such as:
+```
+-->Unsupported response body type: double
+or
+------->>[TAG] Failed to parse response body: FormatException...
+```
+
+### 🧠 Advantages
+1. Simplifies API debugging
+2. Makes log outputs human-readable 
+3. Works with both JSON strings and structured data 
+4. Helps separate logs by tag and method 
+5. Safe from crashes or formatting exceptions
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
