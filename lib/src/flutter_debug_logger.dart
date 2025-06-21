@@ -1,9 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
 
-
 class FlutterDebugLogger {
-
   FlutterDebugLogger._();
 
   static printJsonResponse({
@@ -23,7 +21,8 @@ class FlutterDebugLogger {
         final decoded = jsonDecode(responseBody);
         prettyJson = encoder.convert(decoded);
       } else {
-        prettyJson = '-->Unsupported response body type: ${responseBody.runtimeType}';
+        prettyJson =
+            '-->Unsupported response body type: ${responseBody.runtimeType}';
       }
 
       if (url.isNotEmpty && url != 'N/A') {

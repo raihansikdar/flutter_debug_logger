@@ -5,7 +5,7 @@ void main() {
   group('FlutterDebugLogger', () {
     test('should log pretty JSON from Map', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: 'GET',
           tag: 'TEST',
@@ -23,7 +23,7 @@ void main() {
       const jsonString = '{"success":true,"data":[1,2,3]}';
 
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: 'POST',
           tag: 'TEST',
@@ -36,7 +36,7 @@ void main() {
 
     test('should handle unsupported response body types', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: 'PUT',
           tag: 'TEST',
@@ -49,7 +49,7 @@ void main() {
 
     test('should handle invalid JSON string gracefully', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: 'DELETE',
           tag: 'TEST',
