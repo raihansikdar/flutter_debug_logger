@@ -77,7 +77,7 @@ or
 ------->>[TAG] Failed to parse response body: FormatException...
 ```
 
-### 🧠 Advantages
+## 🧠 Advantages
 1. Simplifies API debugging
 2. Makes log outputs human-readable 
 3. Works with both JSON strings and structured data 
@@ -86,3 +86,10 @@ or
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+```text
+MIT License
+
+Copyright (c) 2025 Raihan Sikdar
+
+Permission is hereby granted, free of charge, to any person obtaining a copy...
