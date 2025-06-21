@@ -37,21 +37,8 @@ FlutterDebugLogger.printJsonResponse(
   url: 'https://api.example.com/product',
   method: 'GET',
   tag: 'PRODUCT_API',
-  statusCode: 200,
-  responseBody: {
-    "success": true,
-    "product": {
-      "id": 101,
-      "name": "Wireless Headphones",
-      "price": 59.99,
-      "in_stock": true,
-      "categories": ["Electronics", "Audio"],
-      "rating": {
-        "average": 4.5,
-        "count": 234
-      }
-    }
-  },
+  statusCode: response.statusCode,
+  responseBody: response.body,
 );
 
 ```
