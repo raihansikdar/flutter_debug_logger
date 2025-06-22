@@ -72,7 +72,7 @@ FlutterDebugLogger.printJsonResponse(
 ## ⚠️ Error Handling
 Invalid JSON strings or unsupported types (like int, double, bool) won't crash your app. The logger will print a fallback message such as:
 ```
------>Unsupported response body type: double
+----->> Unsupported response body type: double
 or
 ----->>[TAG] Failed to parse response body: FormatException...
 ```
