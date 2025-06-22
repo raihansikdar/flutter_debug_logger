@@ -1,6 +1,6 @@
 name: flutter_debug_logger
 description: "FlutterDebugLogger is a singleton utility class designed to print neatly formatted and readable JSON responses (especially for debugging HTTP calls) in your Flutter application."
-version: 0.0.1
+version: 1.0.1
 homepage: https://github.com/raihansikdar/flutter_debug_logger.git
 repository: https://github.com/raihansikdar/flutter_debug_logger.git
 

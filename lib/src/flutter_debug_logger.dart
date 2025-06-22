@@ -21,12 +21,11 @@ class FlutterDebugLogger {
         final decoded = jsonDecode(responseBody);
         prettyJson = encoder.convert(decoded);
       } else {
-        prettyJson =
-            '-->Unsupported response body type: ${responseBody.runtimeType}';
+        prettyJson ='\n----->Unsupported response body type: ${responseBody.runtimeType}';
       }
 
       if (url.isNotEmpty && url != 'N/A') {
-        log("----->[$tag] URL         ==> $url");
+        log("\n----->[$tag] URL         ==> $url");
       }
 
       if (method.isNotEmpty && method != 'N/A') {
@@ -36,7 +35,7 @@ class FlutterDebugLogger {
       log("----->[$tag] StatusCode  ==> $statusCode");
       log("----->[$tag] Body        ==> $prettyJson");
     } catch (e) {
-      log("------->>[$tag] Failed to parse response body: $e");
+      log("\n----->>[$tag] Failed to parse response body: $e");
     }
   }
 }
