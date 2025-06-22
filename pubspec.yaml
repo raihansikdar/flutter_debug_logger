@@ -5,7 +5,7 @@ homepage: https://github.com/raihansikdar/flutter_debug_logger.git
 repository: https://github.com/raihansikdar/flutter_debug_logger.git
 
 environment:
-  sdk: ">=3.4.1 <4.0.0"
+  sdk: ^3.4.1
   flutter: ">=1.17.0"
 
 dependencies:
