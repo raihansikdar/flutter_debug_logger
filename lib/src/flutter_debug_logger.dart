@@ -27,7 +27,7 @@ class FlutterDebugLogger {
   /// - [tag]: Custom tag to identify the log block.
   /// - [statusCode]: The HTTP response code.
   /// - [responseBody]: The response data (can be String, Map, or List).
-  
+
   static void printJsonResponse({
     required String url,
     String method = 'N/A',
