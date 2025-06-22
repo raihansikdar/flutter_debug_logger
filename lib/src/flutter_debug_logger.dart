@@ -21,7 +21,7 @@ class FlutterDebugLogger {
         final decoded = jsonDecode(responseBody);
         prettyJson = encoder.convert(decoded);
       } else {
-        prettyJson ='\n----->Unsupported response body type: ${responseBody.runtimeType}';
+        prettyJson ='\n-----> Unsupported response body type: ${responseBody.runtimeType}';
       }
 
       if (url.isNotEmpty && url != 'N/A') {
