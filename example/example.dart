@@ -11,7 +11,7 @@ void main() {
 
   FlutterDebugLogger.printJsonResponse(
     url: "https://api.example.com/user/info",
-    method: "GET",
+    method: Method.GET,
     tag: "UserAPI",
     statusCode: 200,
     responseBody: mockApiResponse,

@@ -20,7 +20,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_debug_logger: ^1.0.2
+  flutter_debug_logger: ^2.0.0
 
 ```
 
@@ -35,7 +35,7 @@ import 'package:flutter_debug_logger/flutter_debug_logger.dart';
 ```
 FlutterDebugLogger.printJsonResponse(
   url: 'https://api.example.com/product',
-  method: 'GET',
+  method: Method.GET,
   tag: 'PRODUCT_API',
   statusCode: response.statusCode,
   responseBody: response.body,

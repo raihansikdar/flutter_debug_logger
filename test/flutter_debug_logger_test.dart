@@ -7,7 +7,7 @@ void main() {
       expect(
         () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
-          method: 'GET',
+          method: Method.GET,
           tag: 'TEST',
           statusCode: 200,
           responseBody: {
@@ -25,7 +25,7 @@ void main() {
       expect(
         () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
-          method: 'POST',
+          method: Method.POST,
           tag: 'TEST',
           statusCode: 201,
           responseBody: jsonString,
@@ -38,7 +38,7 @@ void main() {
       expect(
         () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
-          method: 'PUT',
+          method: Method.PUT,
           tag: 'TEST',
           statusCode: 400,
           responseBody: 42.0,
@@ -51,7 +51,7 @@ void main() {
       expect(
         () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
-          method: 'DELETE',
+          method: Method.DELETE,
           tag: 'TEST',
           statusCode: 500,
           responseBody: '{invalid json}',
