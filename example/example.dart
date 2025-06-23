@@ -5,8 +5,8 @@ void main() {
     "status": "success",
     "data": {
       "message": "Welcome to Flutter Debug Logger!",
-      "user": {"id": 1, "name": "Raihan Sikdar"}
-    }
+      "user": {"id": 1, "name": "Raihan Sikdar"},
+    },
   };
 
   FlutterDebugLogger.printJsonResponse(
