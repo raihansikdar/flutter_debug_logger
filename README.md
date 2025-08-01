@@ -1,6 +1,6 @@
 # flutter_debug_logger
 
-`flutter_debug_logger` is a lightweight and developer-friendly Flutter utility package for logging API responses in a clean, Postman-like style.
+>`flutter_debug_logger` is a lightweight and developer-friendly Flutter utility package for logging API responses in a clean, Postman-like style.
 It pretty-prints JSON and adds status emojis, making your console logs more structured and readable while debugging REST APIs.
 ---
 
