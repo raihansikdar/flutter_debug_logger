@@ -116,7 +116,7 @@ or
 - JSON strings are pretty-printed with indentation by default
 
 
-## 👤 Author
+##  👨‍💻 Author
 
 **Raihan Sikdar**  
  
