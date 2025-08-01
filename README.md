@@ -118,11 +118,13 @@ or
 
 ## 👤 Author
 
-**Raihan Sikdar**
+**Raihan Sikdar**  
+ 
 Website: [raihansikdar.com](https://raihansikdar.com)  
 Email: raihansikdar10@gmail.com  
 GitHub: [raihansikdar](https://github.com/raihansikdar)  
 LinkedIn: [raihansikdar](https://www.linkedin.com/in/raihansikdar/)
+
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
