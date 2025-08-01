@@ -119,7 +119,7 @@ class FlutterDebugLogger {
         }
       } else {
         prettyJson =
-        '---->> ⚠️ Unsupported response body type: ${responseBody.runtimeType}';
+            '---->> ⚠️ Unsupported response body type: ${responseBody.runtimeType}';
       }
 
       // Add status emoji based on response category

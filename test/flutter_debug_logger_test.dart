@@ -12,7 +12,7 @@ void main() {
 
       // Act & Assert
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.GET,
           tag: 'TEST_MAP',
@@ -27,7 +27,7 @@ void main() {
       const jsonString = '{"success":true,"data":[1,2,3]}';
 
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.POST,
           tag: 'TEST_JSON_STRING',
@@ -40,7 +40,7 @@ void main() {
 
     test('handles unsupported response body types without throwing', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.PUT,
           tag: 'TEST_UNSUPPORTED_TYPE',
@@ -53,7 +53,7 @@ void main() {
 
     test('handles invalid JSON string gracefully without throwing', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.DELETE,
           tag: 'TEST_INVALID_JSON',
@@ -66,7 +66,7 @@ void main() {
 
     test('handles empty string body without throwing', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.HEAD,
           tag: 'TEST_EMPTY_BODY',
@@ -79,7 +79,7 @@ void main() {
 
     test('handles null body without throwing', () {
       expect(
-            () => FlutterDebugLogger.printJsonResponse(
+        () => FlutterDebugLogger.printJsonResponse(
           url: 'https://example.com/api',
           method: Method.OPTIONS,
           tag: 'TEST_NULL_BODY',
